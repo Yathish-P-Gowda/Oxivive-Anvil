@@ -156,6 +156,11 @@ components:
       properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 17, tooltip: '', text: Rs 19.27, margin: null}
       name: label_22
       layout_properties: {grid_position: 'WFKXRQ,HQYSLL'}
+  - name: button_1
+    properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Pay Now, margin: null}
+    type: Button
+    layout_properties: {grid_position: 'BTTYTQ,JUQAUC'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

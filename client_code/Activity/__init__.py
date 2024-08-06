@@ -4,6 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from anvil.js import window
 
 
 class Activity(ActivityTemplate):
@@ -47,3 +48,8 @@ class Activity(ActivityTemplate):
             self.label_24.text = f"Fees: Rs {fee_amount}"
         else:
             self.label_24.text = "Fees: Not available"
+
+  def button_1_click(self, **event_args):
+    window.location.assign("https://razorpay.me/@oxivivelifecareprivatelimited")
+
+
