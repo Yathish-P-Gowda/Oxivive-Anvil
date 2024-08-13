@@ -17,130 +17,6 @@ runtime_options:
   server_spec: {base: python310-standard}
 startup_form: null
 db_schema:
-  oxiclinics:
-    title: oxiclinics
-    client: full
-    server: full
-    columns:
-    - name: oxi_id
-      admin_ui: {width: 200, order: -1}
-      type: string
-    - name: oxi_name
-      admin_ui: {width: 200, order: 0.5}
-      type: string
-    - name: oxi_email
-      admin_ui: {width: 200, order: 1.5}
-      type: string
-    - name: oxi_password
-      admin_ui: {width: 200, order: 4.5}
-      type: string
-    - name: oxi_phone
-      admin_ui: {width: 200, order: 2.5}
-      type: number
-    - name: oxi_address
-      admin_ui: {width: 200, order: 3.5}
-      type: string
-    - name: oxiclinics_Name
-      admin_ui: {width: 200, order: 5.5}
-      type: string
-    - name: oxiclinics_established_year
-      admin_ui: {width: 200, order: 6.5}
-      type: string
-    - name: oxiclinics_District
-      admin_ui: {width: 200, order: 7.5}
-      type: string
-    - name: oxiclinics_State
-      admin_ui: {width: 200, order: 8.5}
-      type: string
-    - name: oxiclinics_pincode
-      admin_ui: {width: 200, order: 9.5}
-      type: number
-    - name: oxiclinics_address
-      admin_ui: {width: 200, order: 10.5}
-      type: string
-    - name: oxiclinics_capsules
-      admin_ui: {order: 12, width: 200}
-      type: number
-    - name: oxiclinics_medical_licence
-      admin_ui: {width: 200, order: 12.5}
-      type: media
-    - name: oxiclinics_building_licence
-      admin_ui: {width: 200, order: 13.5}
-      type: media
-    - name: oxiclinics_id
-      admin_ui: {width: 200, order: 14.5}
-      type: string
-    - name: oxiclinics_image
-      admin_ui: {width: 200, order: 15.5}
-      type: media
-    - name: oxiclinics_discription
-      admin_ui: {width: 200, order: 16.5}
-      type: string
-    - name: oxiclinics_fees
-      admin_ui: {order: 18, width: 200}
-      type: string
-  oxigyms:
-    title: oxigyms
-    client: full
-    server: full
-    columns:
-    - name: oxi_id
-      admin_ui: {width: 200, order: -1}
-      type: string
-    - name: oxi_email
-      admin_ui: {width: 200, order: 1.5}
-      type: string
-    - name: oxi_password
-      admin_ui: {width: 200, order: 2.5}
-      type: string
-    - name: oxi_phone
-      admin_ui: {width: 200, order: 3.5}
-      type: number
-    - name: oxi_address
-      admin_ui: {width: 200, order: 4.5}
-      type: string
-    - name: oxigyms_Name
-      admin_ui: {width: 200, order: 5.5}
-      type: string
-    - name: oxigyms_established_year
-      admin_ui: {width: 200, order: 6.5}
-      type: string
-    - name: oxigyms_District
-      admin_ui: {width: 200, order: 8.5}
-      type: string
-    - name: oxigyms_State
-      admin_ui: {width: 200, order: 7.5}
-      type: string
-    - name: oxigyms_pincode
-      admin_ui: {width: 200, order: 9.5}
-      type: number
-    - name: oxigyms_address
-      admin_ui: {width: 200, order: 10.5}
-      type: string
-    - name: oxigyms_capsules
-      admin_ui: {width: 200, order: 11.5}
-      type: number
-    - name: oxigyms_licence
-      admin_ui: {width: 200, order: 12.5}
-      type: media
-    - name: oxigyms_building_licence
-      admin_ui: {width: 200, order: 13.5}
-      type: media
-    - name: oxigyms_id
-      admin_ui: {width: 200, order: 14.5}
-      type: string
-    - name: oxi_name
-      admin_ui: {width: 200, order: 0.5}
-      type: string
-    - name: oxigyms_discrption
-      admin_ui: {width: 200, order: 15.5}
-      type: string
-    - name: oxigyms_image
-      admin_ui: {width: 200, order: 16.5}
-      type: media
-    - name: oxigyms_fees
-      admin_ui: {width: 200, order: 18}
-      type: string
   oxiwheels:
     title: oxiwheels
     client: full
@@ -206,6 +82,198 @@ db_schema:
     - name: oxiwheels_fees
       admin_ui: {width: 200, order: 19}
       type: string
+  oxi_book_slot:
+    title: oxi_book_slot
+    client: full
+    server: full
+    columns:
+    - name: oxi_date_time
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: service_type
+      admin_ui: {order: 0.5, width: 200}
+      type: string
+    - name: oxi_servicer_id
+      admin_ui: {order: -0.0625, width: 200}
+      type: string
+    - name: username
+      admin_ui: {order: 0.75, width: 200}
+      type: string
+    - name: oxi_book_id
+      admin_ui: {order: -1, width: 200}
+      type: string
+    - name: oxi_id
+      admin_ui: {order: -0.125, width: 200}
+      type: string
+    - name: oxi_book_time
+      admin_ui: {order: -0.5, width: 200}
+      type: string
+    - name: oxi_payment_id
+      admin_ui: {order: -0.03125, width: 200}
+      type: string
+    - name: oxi_service_type
+      admin_ui: {width: 200, order: 1.75}
+      type: string
+    - name: oxi_username
+      admin_ui: {width: 200, order: 2.75}
+      type: string
+    - name: oxi_book_date
+      admin_ui: {order: 3.25, width: 200}
+      type: date
+    - name: oxi_doctor_name
+      admin_ui: {width: 200, order: 11}
+      type: string
+    - name: oxi_session
+      admin_ui: {width: 200, order: 12}
+      type: number
+    - name: oxi_price
+      admin_ui: {width: 200, order: 13}
+      type: number
+    - name: book_date
+      admin_ui: {width: 200, order: 14}
+      type: date
+    - name: serviceProvider_id
+      admin_ui: {width: 200, order: 15}
+      type: string
+    - name: oxi_another_person_name
+      admin_ui: {width: 200, order: 16}
+      type: string
+    - name: oxi_another_person_number
+      admin_ui: {width: 200, order: 17}
+      type: number
+    - name: oxi_reports
+      admin_ui: {width: 200, order: 18}
+      type: media
+  oxi_bank_accounts:
+    client: full
+    server: full
+    columns:
+    - name: account_holder_name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: bank_name
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: branch_name
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: ifsc_code
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: account_number
+      admin_ui: {order: 1, width: 200}
+      type: number
+    - name: account_type
+      admin_ui: {width: 200, order: 5}
+      type: string
+    title: oxi_bank_accounts
+  oxigyms:
+    title: oxigyms
+    client: full
+    server: full
+    columns:
+    - name: oxi_id
+      admin_ui: {width: 200, order: -1}
+      type: string
+    - name: oxi_email
+      admin_ui: {width: 200, order: 1.5}
+      type: string
+    - name: oxi_password
+      admin_ui: {width: 200, order: 2.5}
+      type: string
+    - name: oxi_phone
+      admin_ui: {width: 200, order: 3.5}
+      type: number
+    - name: oxi_address
+      admin_ui: {width: 200, order: 4.5}
+      type: string
+    - name: oxigyms_Name
+      admin_ui: {width: 200, order: 5.5}
+      type: string
+    - name: oxigyms_established_year
+      admin_ui: {width: 200, order: 6.5}
+      type: string
+    - name: oxigyms_District
+      admin_ui: {width: 200, order: 8.5}
+      type: string
+    - name: oxigyms_State
+      admin_ui: {width: 200, order: 7.5}
+      type: string
+    - name: oxigyms_pincode
+      admin_ui: {width: 200, order: 9.5}
+      type: number
+    - name: oxigyms_address
+      admin_ui: {width: 200, order: 10.5}
+      type: string
+    - name: oxigyms_capsules
+      admin_ui: {width: 200, order: 11.5}
+      type: number
+    - name: oxigyms_licence
+      admin_ui: {width: 200, order: 12.5}
+      type: media
+    - name: oxigyms_building_licence
+      admin_ui: {width: 200, order: 13.5}
+      type: media
+    - name: oxigyms_id
+      admin_ui: {width: 200, order: 14.5}
+      type: string
+    - name: oxi_name
+      admin_ui: {width: 200, order: 0.5}
+      type: string
+    - name: oxigyms_discrption
+      admin_ui: {width: 200, order: 15.5}
+      type: string
+    - name: oxigyms_image
+      admin_ui: {width: 200, order: 16.5}
+      type: media
+    - name: oxigyms_fees
+      admin_ui: {width: 200, order: 18}
+      type: string
+  oxi_notifications:
+    title: oxi_notifications
+    client: none
+    server: full
+    columns:
+    - name: oxi_id
+      admin_ui: {width: 200}
+      type: string
+    - name: oxi_notification_title
+      admin_ui: {width: 200}
+      type: string
+    - name: oxi_notification
+      admin_ui: {width: 200}
+      type: string
+    - name: oxi_timestamp
+      admin_ui: {width: 200}
+      type: string
+  oxi_supports:
+    client: none
+    server: full
+    columns:
+    - name: oxi_client_id
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: oxi_email
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: oxi_username
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: oxi_message
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: oxi_media
+      admin_ui: {width: 200, order: 4}
+      type: media
+    title: oxi_supports
+  oxi_wallet:
+    title: oxi_wallet
+    client: full
+    server: full
+    columns:
+    - name: wallet_balance
+      admin_ui: {width: 200}
+      type: number
   oxi_users:
     title: oxi_users
     client: full
@@ -304,114 +372,66 @@ db_schema:
     - name: oxi_blood_group_label
       admin_ui: {width: 200, order: 30}
       type: string
-  oxi_wallet:
-    title: oxi_wallet
+  oxiclinics:
+    title: oxiclinics
     client: full
     server: full
     columns:
-    - name: wallet_balance
-      admin_ui: {width: 200}
-      type: number
-  oxi_bank_accounts:
-    client: full
-    server: full
-    columns:
-    - name: account_holder_name
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: bank_name
-      admin_ui: {width: 200, order: 2}
-      type: string
-    - name: branch_name
-      admin_ui: {width: 200, order: 3}
-      type: string
-    - name: ifsc_code
-      admin_ui: {width: 200, order: 4}
-      type: number
-    - name: account_number
-      admin_ui: {order: 1, width: 200}
-      type: number
-    - name: account_type
-      admin_ui: {width: 200, order: 5}
-      type: string
-    title: oxi_bank_accounts
-  oxi_book_slot:
-    title: oxi_book_slot
-    client: full
-    server: full
-    columns:
-    - name: oxi_date_time
-      admin_ui: {order: 0, width: 200}
-      type: string
-    - name: service_type
-      admin_ui: {order: 0.5, width: 200}
-      type: string
-    - name: oxi_servicer_id
-      admin_ui: {order: -0.0625, width: 200}
-      type: string
-    - name: username
-      admin_ui: {order: 0.75, width: 200}
-      type: string
-    - name: oxi_book_id
-      admin_ui: {order: -1, width: 200}
-      type: string
     - name: oxi_id
-      admin_ui: {order: -0.125, width: 200}
+      admin_ui: {width: 200, order: -1}
       type: string
-    - name: oxi_book_time
-      admin_ui: {order: -0.5, width: 200}
+    - name: oxi_name
+      admin_ui: {width: 200, order: 0.5}
       type: string
-    - name: oxi_payment_id
-      admin_ui: {order: -0.03125, width: 200}
+    - name: oxi_email
+      admin_ui: {width: 200, order: 1.5}
       type: string
-    - name: oxi_service_type
-      admin_ui: {width: 200, order: 1.75}
+    - name: oxi_password
+      admin_ui: {width: 200, order: 4.5}
       type: string
-    - name: oxi_username
-      admin_ui: {width: 200, order: 2.75}
-      type: string
-    - name: oxi_book_date
-      admin_ui: {order: 3.25, width: 200}
-      type: date
-    - name: oxi_doctor_name
-      admin_ui: {width: 200, order: 11}
-      type: string
-    - name: oxi_session
-      admin_ui: {width: 200, order: 12}
+    - name: oxi_phone
+      admin_ui: {width: 200, order: 2.5}
       type: number
-    - name: oxi_price
-      admin_ui: {width: 200, order: 13}
-      type: number
-    - name: book_date
-      admin_ui: {width: 200, order: 14}
-      type: date
-    - name: serviceProvider_id
-      admin_ui: {width: 200, order: 15}
+    - name: oxi_address
+      admin_ui: {width: 200, order: 3.5}
       type: string
-    - name: oxi_another_person_name
-      admin_ui: {width: 200, order: 16}
+    - name: oxiclinics_Name
+      admin_ui: {width: 200, order: 5.5}
       type: string
-    - name: oxi_another_person_number
-      admin_ui: {width: 200, order: 17}
+    - name: oxiclinics_established_year
+      admin_ui: {width: 200, order: 6.5}
+      type: string
+    - name: oxiclinics_District
+      admin_ui: {width: 200, order: 7.5}
+      type: string
+    - name: oxiclinics_State
+      admin_ui: {width: 200, order: 8.5}
+      type: string
+    - name: oxiclinics_pincode
+      admin_ui: {width: 200, order: 9.5}
       type: number
-    - name: oxi_reports
-      admin_ui: {width: 200, order: 18}
+    - name: oxiclinics_address
+      admin_ui: {width: 200, order: 10.5}
+      type: string
+    - name: oxiclinics_capsules
+      admin_ui: {order: 12, width: 200}
+      type: number
+    - name: oxiclinics_medical_licence
+      admin_ui: {width: 200, order: 12.5}
       type: media
-  oxi_notifications:
-    title: oxi_notifications
-    client: none
-    server: full
-    columns:
-    - name: oxi_id
-      admin_ui: {width: 200}
+    - name: oxiclinics_building_licence
+      admin_ui: {width: 200, order: 13.5}
+      type: media
+    - name: oxiclinics_id
+      admin_ui: {width: 200, order: 14.5}
       type: string
-    - name: oxi_notification_title
-      admin_ui: {width: 200}
+    - name: oxiclinics_image
+      admin_ui: {width: 200, order: 15.5}
+      type: media
+    - name: oxiclinics_discription
+      admin_ui: {width: 200, order: 16.5}
       type: string
-    - name: oxi_notification
-      admin_ui: {width: 200}
-      type: string
-    - name: oxi_timestamp
-      admin_ui: {width: 200}
+    - name: oxiclinics_fees
+      admin_ui: {order: 18, width: 200}
       type: string
 uplink_visible: true
